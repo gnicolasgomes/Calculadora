@@ -1,6 +1,3 @@
-body{
-    
-}
 
 #b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b0, #suma, #resta, #multiplicacion, #division, #bigual, #bc{
     width: 100px;
@@ -14,6 +11,7 @@ body{
 }
 
 .div_botones-numeros{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: grid;
     grid-template-columns: 150px 150px 150px;
     grid-template-rows: 150px 150px 150px 150px;
@@ -27,20 +25,36 @@ body{
 }
 
 .div_botones-simbolos{
+    display: flex;
+    height: 100%;
+    width: 100%;
     grid-area: sim;
     background-color: brown;
+    font-size: 50px;
+    font-weight: bolder;
 }
 
+.suma, .resta, .multiplicacion, .division{
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+}
 .div_botones-simbolos_h{
+    width: 100%;
     display: grid;
     grid-template-columns: 150px 150px;
     grid-template-rows: 150px 150px;
     border-style: solid;
-    /*text-align: center;
+    text-align: center;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    align-content: center;*/
+    align-content: center;
     cursor:context-menu;
 }
 
@@ -76,21 +90,19 @@ body{
     align-items: center;
 }
 
-.b1:hover, .b2:hover, .b3:hover,.b4:hover,.b5:hover,.b6:hover,.b7:hover,.b8:hover,.b9:hover,.b0:hover, .suma:hover, .resta:hover, .multiplicacion:hover, .division:hover, .bigual:hover, .bc:hover {
-    background-color: aqua;
+#b1:hover, #b2:hover, #b3:hover,#b4:hover,#b5:hover,#b6:hover,#b7:hover,#b8:hover,#b9:hover,#b0:hover, #suma:hover, #resta:hover, #multiplicacion:hover, #division:hover, #bigual:hover, #bc:hover {
+    background-color: red;
     font-size: 45px;
 }
 
+
 .suma:hover, .resta:hover, .multiplicacion:hover, .division:hover{
-    background-color: aqua;
+    font-size: 85px;
+    background-color: red;
 }
 
 .titulo{
     color: white;
-    background-color: blue;
-}
-
-.div_botones-numeros:nth-child(9){
     background-color: blue;
 }
 
