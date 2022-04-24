@@ -27,16 +27,20 @@ body{
 }
 
 .div_botones-simbolos{
+    grid-area: sim;
+    background-color: brown;
+}
+
+.div_botones-simbolos_h{
     display: grid;
     grid-template-columns: 150px 150px;
     grid-template-rows: 150px 150px;
     border-style: solid;
-    text-align: center;
+    /*text-align: center;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    align-content: center;
-    grid-area: sim;
+    align-content: center;*/
     cursor:context-menu;
 }
 
