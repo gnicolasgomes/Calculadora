@@ -1,0 +1,111 @@
+body{
+    
+}
+
+#b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b0, #suma, #resta, #multiplicacion, #division, #bigual, #bc{
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.div_botones-numeros{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px;
+    border-style: solid;
+    grid-area: num;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    cursor:context-menu;
+}
+
+.div_botones-simbolos{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 150px;
+    border-style: solid;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    grid-area: sim;
+    cursor:context-menu;
+}
+
+@font-face {
+    font-family: "Calculator";
+    src: url("/Calculator.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.div_resultado{
+    height: 75px;
+    font-size: 60px;
+    border-style: solid;
+    grid-area: res;
+    font-family: "Calculator";
+    font-weight: bolder;
+}
+
+.titulo{
+    border-style: solid;
+    grid-area: titu;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "titu titu"
+    "res res"
+    "num sim";
+    border-style: solid;
+    text-align: center;
+    align-items: center;
+}
+
+.b1:hover, .b2:hover, .b3:hover,.b4:hover,.b5:hover,.b6:hover,.b7:hover,.b8:hover,.b9:hover,.b0:hover, .suma:hover, .resta:hover, .multiplicacion:hover, .division:hover, .bigual:hover, .bc:hover {
+    background-color: aqua;
+    font-size: 45px;
+}
+
+.suma:hover, .resta:hover, .multiplicacion:hover, .division:hover{
+    background-color: aqua;
+}
+
+.titulo{
+    color: white;
+    background-color: blue;
+}
+
+.div_botones-numeros:nth-child(9){
+    background-color: blue;
+}
+
+.botonnum, .botonig, .botonc{
+    background-color: gray;
+}
+
+.suma, .resta, .multiplicacion, .division{
+    background-color: brown;
+}
+
+.div_botones-numeros{
+    background-color: blue;
+}
+
+.div_resultado{
+    background-color: greenyellow;
+}
+
+.div_botones-simbolos{
+    background-color: brown;
+}
