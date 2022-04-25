@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+body{
+    background-color: black;
+}
 #b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b0, #suma, #resta, #multiplicacion, #division, #bigual, #bc{
     width: 100px;
     height: 100px;
@@ -68,15 +71,18 @@
 .div_resultado{
     height: 75px;
     font-size: 60px;
-    border-style: solid;
     grid-area: res;
     font-family: "Calculator";
     font-weight: bolder;
+    background-color: black;
+    color: greenyellow;
 }
 
 .titulo{
-    border-style: solid;
+    color: white;
+    background-color: blue;
     grid-area: titu;
+    font-family: 'Tapestry', cursive;
 }
 
 body{
@@ -101,10 +107,7 @@ body{
     background-color: red;
 }
 
-.titulo{
-    color: white;
-    background-color: blue;
-}
+
 
 .botonnum, .botonig, .botonc{
     background-color: gray;
@@ -116,10 +119,6 @@ body{
 
 .div_botones-numeros{
     background-color: blue;
-}
-
-.div_resultado{
-    background-color: greenyellow;
 }
 
 .div_botones-simbolos{
